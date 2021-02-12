@@ -8,3 +8,7 @@ $(function () {
                 $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
             });
         });
+
+$('#myModal').on('shown.bs.modal', function () {
+    $('#myInput').trigger('focus')
+})

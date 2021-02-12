@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Required meta tags always come first -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-    <!-- Additional CSS must be placed after Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700">
     <link rel="stylesheet" href="styles.css">
 
     <title>Landscape Designing</title>
@@ -40,31 +37,94 @@
                 </li>
             </ul>
         </div>
-        <a  href="contactus.html" role="button" class="btn btn-lg btn-success" value="getDesignNow">GET DESIGN NOW</a>
+    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#designModal">
+        GET DESIGN NOW
+    </button>
     </nav>
+
+<!-- Modal -->
+<div class="modal fade" id="designModal" tabindex="-1" role="dialog" aria-labelledby="designModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="designModalTitle">Request a Consultaion for Design</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <div class="container-fluid" id="consultForm">
+                    <div class="row row-content">
+                        <div class="col">
+                            <form>
+                                <div class="form-group row">
+                                    <label for="firstName" class="col-md-3 col-form-label">First Name</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control" id="firstName" name="firstName"
+                                            placeholder="First Name" />
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="lastName" class="col-md-3 col-form-label">Last Name</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control" id="lastName" name="lastName"
+                                            placeholder="Last Name" />
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="areaCode" class="col-md-3 col-form-label">Contact Tel.</label>
+                                    <div class="col-4 col-md-3">
+                                        <input type="tel" class="form-control" id="areaCode" name="areaCode"
+                                            placeholder="Area code" />
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="tel" class="form-control" name="telNum"
+                                            placeholder="Tel. number" />
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="email" class="col-md-3 col-form-label">Email</label>
+                                    <div class="col-md-9">
+                                        <input type="email" class="form-control" id="email" name="email"
+                                            placeholder="Email" />
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="feedback" class="col-md-3 col-form-label">Describe Your Project</label>
+                                    <div class="col-md-9">
+                                        <textarea class="form-control" id="feedback" name="feedback"
+                                            rows="8"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="offset-md-4 col-md-10">
+                                        <button type="submit" class="btn btn-primary">Submit Form</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <section class="container-fluid">
     <div class="row align-items-center content">
         <div class="container-fluid">
             <div class="row align-items-center content">
-                <div class="col-md-6 order-2 order-md-1 pt-1">
+                <div class="col-md-6 order-2 order-md-1 pt-4">
                     <img src="img\IMG_0748.JPG" alt="" class="img-fluid rounded">
                 </div>
+                
                 <div class="col-md-6 text-center order-1 order-md-2">
                     <div class="row justify-content-center">
                         <div class="col-10 col-lg-8 blurb mb-5 mb-md-0 pt-3">
                             <h2><i class="fa fa-home fa-lg"></i>Landscape Design</h2>
-                                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, iste
-                                    molestiae
-                                    beatae, maiores deserunt
-                                    in voluptatibus
-                                    aspernatur architecto excepturi delectus soluta? Ipsa, deleniti dolorem hic
-                                    consequatur
-                                    repellat eveniet quidem
-                                    voluptate necessitatibus dolorum delectus minus vitae, ut, veritatis sint ipsum
-                                    magnam
-                                    autem nam ex deserunt debitis
-                                    eaque ratione! Nobis, quidem assumenda.</p>
+                                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dicta modi sequi quibusdam molestiae a vel ratione quidem blanditiis consequatur, officiis atque inventore corporis nulla nesciunt eligendi voluptas voluptatem? Deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum aliquam sunt veniam error soluta?
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -72,20 +132,12 @@
                 <div class="row align-items-center content">
                     <div class="col-md-6 text-center">
                         <div class="row justify-content-center">
-                            <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+                            <div class="col-10 col-lg-8 blurb mb-5 mb-md-0 pt-3">
                                 <h2><img src="img\PngItem_5652180.png" alt="" class="img-fluid" id="patio">Patio Design
                                 </h2>
-                                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, iste
-                                    molestiae
-                                    beatae, maiores deserunt
-                                    in voluptatibus
-                                    aspernatur architecto excepturi delectus soluta? Ipsa, deleniti dolorem hic
-                                    consequatur
-                                    repellat eveniet quidem
-                                    voluptate necessitatibus dolorum delectus minus vitae, ut, veritatis sint ipsum
-                                    magnam
-                                    autem nam ex deserunt debitis
-                                    eaque ratione! Nobis, quidem assumenda.</p>
+                                <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis accusamus tempora perspiciatis, fugiat voluptates dolorem officiis, eum repudiandae dolorum culpa nemo illum? Blanditiis aperiam error autem. Nobis possimus aspernatur adipisci. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum hic obcaecati aliquid non vitae est vel.
+
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -99,17 +151,11 @@
                     </div>
                     <div class="col-md-6 text-center order-1 order-md-2">
                         <div class="row justify-content-center">
-                            <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+                            <div class="col-10 col-lg-8 blurb mb-md-0">
                                 <h2><img src="img\pruning shears icon.png" alt="" class="img-fluid"
                                         id="shears">Maintenance</h2>
-                                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, iste
-                                    molestiaebeatae, maiores deserunt in voluptatibus aspernatur architecto excepturi
-                                    delectus soluta? Ipsa, deleniti dolorem hic consequatur repellat eveniet quidem
-                                    voluptate necessitatibus dolorum delectus minus vitae, ut, veritatis sint ipsum
-                                    magnam
-                                    autem nam ex deserunt
-                                    debitis
-                                    eaque ratione! Nobis, quidem assumenda.</p>
+                                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nam labore praesentium maxime iusto doloribus reiciendis quis odit vero! Rerum dolorem, sit sint natus quo ipsam animi accusantium eveniet iure! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt obcaecati libero, porro, optio placeat harum iusto blanditiis quidem hic.
+                                </p>
                             </div>
                         </div>
                     </div>

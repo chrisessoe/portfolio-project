@@ -96,3 +96,8 @@ h1 {
 h2{
     font-weight: 100;
 }
+
+#designModal .modal-header {
+    color:wheat;
+    background-color:rgb(80, 120, 83);;
+    }
